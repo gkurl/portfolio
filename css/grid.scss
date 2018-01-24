@@ -1,0 +1,106 @@
+/* Initial container for grid - width 100% but max-width set for larger devices so it doesn't go out of bounds */
+
+
+.grid-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Clearfix 'hack' for rows -
+The purpose of the row element is to keep the columns inside it
+From overflowing onto other rows.
+To achieve this, we'll use the clearfix hack to make sure everything inside the row stays inside the row */
+
+.row:before, .row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* Column - responsive inbound later. Using float as is less error prone and min-height to prevent columns
+ from stacking ontop of each other - Column width - divide total number of columns by width of the container i.e.
+  100% width, 6 columns == 100/6 = 16.66 for base column */
+
+[class*='col-']{
+  float:left;
+  min-height: 1px;
+  width:16.66%;
+  /* Gutter for columns */
+  padding:12px;
+}
+
+/* Repeat for other columns */
+
+.col-1{
+  width: 16.66%;
+}
+.col-2{
+  width: 33.33%;
+}
+.col-3{
+  width: 50%;
+}
+.col-4{
+  width: 66.664%;
+}
+.col-5{
+  width: 83.33%;
+}
+.col-6{
+  width: 100%;
+  margin:0;
+}
+
+/* Using border box to set column 'gutters' */
+
+.grid-container *{
+  box-sizing: border-box;
+}
+
+.outline, .outline*{
+
+  outline: 1px solid black;
+}
+
+/*!* Some extra column content styling - !! Testing purposes only !! *! */
+
+[class*='col-'] {
+
+  /*background-color: #FFC2C2;*/
+  margin-top:20px;
+  padding:0;
+  text-align:center;
+  color:white;
+
+}
+
+/* Making the grid Responsive for mobile - double the widths of the columns for screens under 800px. */
+/* last column in row hangs off end - to counter make last .col-2 and .col-1 100% wide */
+
+@media all and (max-width:800px){
+  .col-1{width: 33.33%;}
+  .col-2{width:50%;}
+  .col-3{width:83.33%;}
+  .col-4{width:100%;}
+  .col-5{width:100%;}
+  .col-6{width:100%;}
+
+  .row .col-2:last-of-type{
+    width: 100%;
+  }
+
+  .row .col-5 ~ .col-1{
+    width:100%;
+  }
+}
+
+/* For screens smaller than 800px - all columns except the very smallest 100% */
+
+@media all and (max-width:650px){
+  .col-1{ width: 50%;     }
+  .col-2{ width: 100%;    }
+  .col-3{ width: 100%;    }
+  .col-4{ width: 100%;    }
+  .col-5{ width: 100%;    }
+  .col-6{ width: 100%;    }
+}

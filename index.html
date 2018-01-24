@@ -13,14 +13,39 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grid.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="grid-container">
+        <div class="row">
+            <div class="col-2">
+               <img class="avatar" src="img/mypic.jpg" height="150px" width="150px" alt="avatar">
+            </div>
+
+            <div class="col-2">
+                <p class="t1"><h1>Hi, my name is Gagandeep Kurl</h1> </p>
+                <p>I'm an aspiring full-stack developer from the UK</p>
+            </div>
+
+            <div class="col-2">
+                <h2 class="t2">Things i'm working on</h2>
+                <div class="product-grid">
+                <a class="1" href="#"><img src="img/001-cd.svg" height="150px" width="150px"/> </a>
+                <a class="2" href="#"><img src="img/002-monitor.svg" height="150px" width="150px"/> </a>
+                <a class="3" href="#"><img src="img/003-printer.svg" height="150px" width="150px"/> </a>
+                <a class="4" href="#"><img src="img/004-diamond.svg" height="150px" width="150px"/> </a>
+                </div>
+            </div>
+
+
+        </div>
+
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
