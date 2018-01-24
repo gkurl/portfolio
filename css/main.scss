@@ -148,7 +148,14 @@ body{
 }
 
 .product-grid{
-  display:block;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .product-grid a img{
