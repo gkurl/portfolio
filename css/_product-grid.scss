@@ -1,0 +1,39 @@
+.main-nav ul li{
+  list-style: none;
+  display:inline-flex;
+  padding: 25px;
+  text-align: center;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+.avatar{
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.product-grid{
+  max-width: 19rem;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.product-grid a img{
+  max-width: 200px;
+  max-height:200px;
+  display:inline-flex;
+  padding:20px;
+
+}
+
+.product-grid a:hover img{
+  transition: background-color 0.5s ease;
+  background-color: aliceblue;
+  border-radius:25%;
+}

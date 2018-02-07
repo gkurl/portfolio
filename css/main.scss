@@ -109,7 +109,14 @@ $deg: 180deg;
 }
 
 html{
-  height:100%;
+  min-height: 100%;
+  background: linear-gradient($bgcolor1, $bgcolor2);
+  background: -webkit-gradient(linear, center top, center bottom, from($bgcolor1), to($bgcolor2));
+  background: -webkit-linear-gradient($bgcolor1, $bgcolor2);
+  background: -moz-linear-gradient($bgcolor1, $bgcolor2);
+  background: -o-linear-gradient($bgcolor1, $bgcolor2);
+  background: -ms-linear-gradient($bgcolor1, $bgcolor2);
+  background: linear-gradient($bgcolor1, $bgcolor2);
 }
 
 
@@ -117,7 +124,8 @@ html{
 body{
   height: 100%;
   font-family: $font-stack;
-  background: linear-gradient(180deg, $bgcolor1 0%, $bgcolor1 20%, $bgcolor2 0%, $bgcolor2 60%);
+
+
 }
 
 
@@ -138,83 +146,11 @@ h2 {
 
 /* Start of right side product grid */
 
+@import "product-grid";
 
+/* Start info section below product grid - I build products bit etc */
 
-.main-nav ul li{
-  list-style: none;
-  display:inline-flex;
-  padding: 25px;
-  text-align: center;
-  margin-left:50px;
-  margin-right:50px;
-}
-
-.avatar{
-  border-radius: 50%;
-  margin-bottom: 50px;
-}
-
-.product-grid{
-  max-width: 19rem;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.product-grid a img{
-  max-width: 200px;
-  max-height:200px;
-  display:inline-flex;
-  padding:20px;
-
-}
-
-.product-grid a:hover img{
-  transition: background-color 0.5s ease;
-  background-color: aliceblue;
-  border-radius:25%;
-}
-
-.info{
-  h2{
-    color: goldenrod;
-  }
-  a{
-      position: relative;
-      color: ghostwhite;
-      text-decoration: none;
-    }
-  a:hover{
-    color: ghostwhite;
-  }
-  a:before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: ghostwhite;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  a:hover:before{
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-
-  display:inline-block;
-}
-
+@import "info-section";
 
 
 /* Media Queries */

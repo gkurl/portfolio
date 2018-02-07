@@ -85,12 +85,18 @@ textarea {
   margin-bottom: 2rem; }
 
 html {
-  height: 100%; }
+  min-height: 100%;
+  background: linear-gradient(MidnightBlue, RoyalBlue);
+  background: -webkit-gradient(linear, center top, center bottom, from(MidnightBlue), to(RoyalBlue));
+  background: -webkit-linear-gradient(MidnightBlue, RoyalBlue);
+  background: -moz-linear-gradient(MidnightBlue, RoyalBlue);
+  background: -o-linear-gradient(MidnightBlue, RoyalBlue);
+  background: -ms-linear-gradient(MidnightBlue, RoyalBlue);
+  background: linear-gradient(MidnightBlue, RoyalBlue); }
 
 body {
   height: 100%;
-  font-family: "Cabin", sans-serif;
-  background: linear-gradient(180deg, MidnightBlue 0%, MidnightBlue 20%, RoyalBlue 0%, RoyalBlue 60%); }
+  font-family: "Cabin", sans-serif; }
 
 h2 {
   font-size: 1.3rem;
@@ -136,10 +142,14 @@ h2 {
   background-color: aliceblue;
   border-radius: 25%; }
 
+/* Start info section below product grid - I build products bit etc */
 .info {
   display: inline-block; }
   .info h2 {
     color: goldenrod; }
+  .info .info-links {
+    list-style-type: none;
+    display: flex; }
   .info a {
     position: relative;
     color: ghostwhite;
@@ -150,7 +160,7 @@ h2 {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1.5px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: ghostwhite;
