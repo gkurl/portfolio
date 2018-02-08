@@ -195,10 +195,10 @@ h2 {
       background: linear-gradient(to right, Thistle, Plum); }
     .strike > span:before {
       right: 100%;
-      margin-right: 10rem; }
+      margin-right: 5rem; }
     .strike > span:after {
       left: 100%;
-      margin-left: 10rem; }
+      margin-left: 5rem; }
 
 /* Media Queries */
 @media all and (max-width: 320px) {
