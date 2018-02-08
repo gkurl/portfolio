@@ -142,6 +142,17 @@ h2 {
   line-height: 2.6rem;
 }
 
+.b1 {
+
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #605C84 0%, #DC98BD 50%, #605C84 100%);
+  border-image-slice: 1;
+
+
+} section > .b1{
+
+  }
+
 
 
 /* Start of right side product grid */

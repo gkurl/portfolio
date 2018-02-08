@@ -107,6 +107,11 @@ h2 {
   font-weight: 700;
   line-height: 2.6rem; }
 
+.b1 {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #605C84 0%, #DC98BD 50%, #605C84 100%);
+  border-image-slice: 1; }
+
 /* Start of right side product grid */
 .main-nav ul li {
   list-style: none;
@@ -146,6 +151,8 @@ h2 {
 .info {
   display: inline-block; }
   .info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
     color: goldenrod; }
   .info .info-links {
     list-style-type: none;
