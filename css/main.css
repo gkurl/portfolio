@@ -107,11 +107,7 @@ h2 {
   font-weight: 700;
   line-height: 2.6rem; }
 
-.b1 {
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, #605C84 0%, #DC98BD 50%, #605C84 100%);
-  border-image-slice: 1; }
-
+/* Text in middle of line mixin */
 /* Start of right side product grid */
 .main-nav ul li {
   list-style: none;
@@ -180,6 +176,29 @@ h2 {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1); }
+
+/* Import of strikethrough for headings */
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; }
+  .strike > span {
+    position: relative;
+    display: inline-block; }
+    .strike > span:before, .strike > span:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 2px;
+      background: linear-gradient(to right, Thistle, Plum); }
+    .strike > span:before {
+      right: 100%;
+      margin-right: 15px; }
+    .strike > span:after {
+      left: 100%;
+      margin-left: 15px; }
 
 /* Media Queries */
 @media all and (max-width: 320px) {
