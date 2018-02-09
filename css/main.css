@@ -145,7 +145,8 @@ h2 {
 
 /* Start info section below product grid - I build products bit etc */
 .info {
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
   .info h2 {
     font-size: 1.8rem;
     font-weight: 500;
@@ -208,7 +209,7 @@ h2 {
 .container {
   max-width: 64rem;
   margin: auto;
-  padding: 4rem;
+  padding-top: 2rem;
   padding-bottom: 6rem; }
 
 .services .container > div {
@@ -222,6 +223,9 @@ h2 {
   padding-right: 2rem; }
 
 .centre {
+  text-align: center; }
+
+.services p {
   text-align: center; }
 
 /* Media Queries */
