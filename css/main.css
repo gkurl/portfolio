@@ -177,13 +177,15 @@ h2 {
     -webkit-transform: scaleX(1);
     transform: scaleX(1); }
 
-/* Import of strikethrough for headings */
+/* Include of strikethrough for headings */
 .strike {
   display: block;
   text-align: center;
   overflow: hidden;
   white-space: nowrap; }
   .strike > span {
+    font-size: 2rem;
+    font-weight: 500;
     position: relative;
     display: inline-block; }
     .strike > span:before, .strike > span:after {

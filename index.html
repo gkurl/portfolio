@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -24,7 +24,7 @@
 
         <div class="grid-container">
         <div class="row">
-            <div class="col-2">
+            <div class="col-2 reveal">
                <img class="avatar" src="img/mypic.jpg" height="150px" width="150px" alt="avatar">
             </div>
 
@@ -36,7 +36,7 @@
 
 
 
-            <div class="col-2">
+            <div class="col-2 reveal">
                 <h2 class="">Header 1</h2>
                 <div class="product-grid">
                 <a class="1" href="#"><img src="img/001-cd.svg" height="150px" width="150px"/> </a>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             </div>
-        <div class="col-3">
+        <div class="col-3 reveal">
             <div class="info">
             <div class="products mb3">
                <h2>Header 2</h2>
@@ -58,26 +58,27 @@
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                 </ul>
             </div>
-            <div class="companies mb3">
+            <div class="companies mb3 reveal">
                 <h2>Header 3</h2>
-                <ul class="info-links">
+                <ul class="info-links reveal">
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                 </ul>
             </div>
-            <div class="technologies mb3">
+            <div class="technologies mb3 reveal">
                 <h2>Header 4</h2>
-                <ul class="info-links">
+                <ul class="info-links reveal">
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                 </ul>
             </div>
-            <div class="links mb3">
-                <ul class="info-links">
+            <div class="links mb3 reveal">
+                <h2>Header 4</h2>
+                <ul class="info-links reveal">
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
                     <li><a href="#">Blah.net</a>,</li> &nbsp;
@@ -91,14 +92,15 @@
 
 
 
-        <section class="services col-6">
-            <div class="strike">
+        <section class="services col-6 reveal">
+            <div class="strike reveal">
                 <span>Sub-section 1</span>
             </div>
-            <h2 class="section-title">Sub-section 1</h2>
         </section>
-        <section class="services col-6">
-            <h2 class="section-title">Sub-section 2</h2>
+        <section class="services col-6 reveal">
+            <div class="strike reveal">
+                <span>Sub-section 2</span>
+            </div>
         </section>
 
 
@@ -113,6 +115,9 @@
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="js/scroll.js"></script>
+        <script> sr.reveal('.reveal', {container: '.row'});</script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>

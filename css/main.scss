@@ -163,7 +163,7 @@ h2 {
 
 @import "info-section";
 
-/* Import of strikethrough for headings */
+/* Include of strikethrough for headings */
 .strike {
   @include bg-strike($col1, $col2);
 }
