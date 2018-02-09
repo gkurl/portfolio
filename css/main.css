@@ -202,6 +202,28 @@ h2 {
       left: 100%;
       margin-left: 5rem; }
 
+.flex {
+  display: flex; }
+
+.container {
+  max-width: 64rem;
+  margin: auto;
+  padding: 4rem;
+  padding-bottom: 6rem; }
+
+.services .container > div {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  flex: 1; }
+
+.px3 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.centre {
+  text-align: center; }
+
 /* Media Queries */
 @media all and (max-width: 320px) {
   .t2 {
