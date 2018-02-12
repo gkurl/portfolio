@@ -127,14 +127,15 @@ html{
 
 
 
-body{
+body {
   height: 100%;
   font-family: $font-stack;
 
-
 }
 
-
+ul {
+  list-style-type: none;
+}
 
 h2 {
   font-size: 1.3rem;
@@ -148,10 +149,26 @@ h2 {
   line-height: 2.6rem;
 }
 
+.avatar{
+  border: 2px solid #605C84;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: 50%;
+  max-width: 130px;
+  max-height: 130px;
+
+} .avatar ul li:nth-child(odd) {
+    left: -48px;
+
+  } .avatar ul li {
+      position: absolute;
+      top: -48px;
+    }
+
+
+
+
 /* Text in middle of line mixin */
-
-
-
 
 
 
@@ -172,12 +189,19 @@ h2 {
   display: flex;
 }
 
+.flex-column{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 .container {
 
   max-width: 64rem;
   margin: auto;
   padding-top: 2rem;
   padding-bottom:6rem;
+
 }.services .container > div{
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -191,7 +215,17 @@ h2 {
       } .services p {
                  text-align: center;
                }
+.testimonials{
+  display:block;
+}  .testimonials ul {
+     border-radius: 25px;
+     border: 2px solid #605C84;
+     padding: 3rem;
+     margin-bottom: 6rem;
+     width: 70%;
+     position: relative;
 
+}
 
 
 /* Media Queries */
